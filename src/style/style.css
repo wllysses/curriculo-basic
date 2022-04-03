@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.cabecalho {
+    background-color: black;
+    min-height: 80px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.cabecalho div .menu {
+    display: flex;
+}
+
+.cabecalho div .menu li {
+    margin-left: 30px;
+}
+
+.cabecalho a {
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.cabecalho a:hover {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.principal li {
+    margin-bottom: 10px;
+}
+
+.principal {
+    width: 800px;
+    background-color: black;
+    margin: 50px auto;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.603);
+}
+
+.principal .conteudo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.principal .conteudo .titulo-apresentacao, .titulo-formacao, .titulo-tecnologias, .titulo-contato {
+    margin-bottom: 10px;
+}
+
+.principal .conteudo .texto-apresentacao {
+    max-width: 400px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.rodape {
+    background-color: black;
+    min-height: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selo-validacao {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+
+    .cabecalho {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .cabecalho .titulo {
+        margin-bottom: 20px;
+    }
+
+    .cabecalho div .menu {
+        display: block;
+    }
+
+    .cabecalho div .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .cabecalho a:hover {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        text-decoration: underline;
+    }
+
+    .principal {
+        width: 500px;
+        text-align: center;
+    }
+
+    .principal .conteudo {
+        flex-direction: column;
+    }
+
+    .conteudo .soft-skills .titulo-tecnologias, .contatos .titulo-contato {
+        margin-top: 20px;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    .principal .conteudo .texto-apresentacao {
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .principal {
+        width: 380px;
+    }
+}
